@@ -1,0 +1,27 @@
+Push to GitHub 
+
+Example 
+1. + New Repository 
+2. Repository name: AnimatedTextGitDemo 
+3. Initialize with README
+4. Create Repository 
+5. a) create new repository on the command line (start from scratch)
+5. -> b) push an existing repo from the command line (git init first on local machine) 
+
+Add a remote, call it "origin"  
+- remote is a nickname for a URL where the repo lives 
+- by default remote is "origin" 
+-> git remote add origin (url) 
+-> git push -u (remote: origin) (branch: master, typically) 
+
+Example 2 -> push master branch 
+1. modify app.css 
+2. git add . 
+3. git commit -m "change bg to olive" 
+4. git branch -> master 
+5. git push (no need for "origin master" because we already used -u flag) 
+
+Example 3 -> push other branch 
+1. git branch 
+2. git checkout teal-bg -> "switched to 'teal-bg'" 
+3. git push origin teal-bg 
